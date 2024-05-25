@@ -39,11 +39,5 @@ public class P04_PlaywrightMethods {
         page.close();
         browser.close();
         playwright.close();
-
-
-
-
-
-
     }
 }

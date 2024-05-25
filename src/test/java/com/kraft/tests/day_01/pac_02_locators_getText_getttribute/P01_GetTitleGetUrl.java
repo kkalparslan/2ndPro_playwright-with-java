@@ -31,6 +31,5 @@ public class P01_GetTitleGetUrl {
         page.close();
         browser.close();
         playwright.close();
-
     }
 }

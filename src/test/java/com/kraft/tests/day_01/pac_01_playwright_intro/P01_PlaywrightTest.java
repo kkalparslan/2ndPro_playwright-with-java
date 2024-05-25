@@ -20,6 +20,5 @@ public class P01_PlaywrightTest {
         page.close();
         browser.close();
         playwright.close(); //açılan tüm sayfa, browser ve playwright objelerini kapatmamız gerekiyor
-
     }
 }
