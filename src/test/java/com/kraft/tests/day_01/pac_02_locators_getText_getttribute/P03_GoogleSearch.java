@@ -10,7 +10,8 @@ public class P03_GoogleSearch {
 
         Playwright playwright=Playwright.create();
         BrowserType chromium = playwright.chromium();
-        Browser browser = chromium.launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Browser browser = chromium.launch(
+                new BrowserType.LaunchOptions().setHeadless(false));
         Page page = browser.newPage();
         page.navigate("https://www.google.com/");
 
@@ -18,8 +19,10 @@ public class P03_GoogleSearch {
         Locator searchBox=page.locator("//textarea[@name='q']");
        // searchBox.type("Selenium"); search box vb yerlere 3 türlü veri gönderebiliriz
        // searchBox.fill("Selenium");
-        searchBox.pressSequentially("Selenium", new Locator.PressSequentiallyOptions()
-                .setDelay(100));//setDelay yapmadan da sadece pressSequentially() methodunu kullanabiliriz
+        searchBox.pressSequentially("Selenium",
+                //put that statement to put delay between letters while writing
+                new Locator.PressSequentiallyOptions()
+                .setDelay(100));//setDelay yapmadan da sadece pressSequentially() methodunu kullanabiliriz.
         Keyboard keyboard = page.keyboard();
         keyboard.press("Enter");
 

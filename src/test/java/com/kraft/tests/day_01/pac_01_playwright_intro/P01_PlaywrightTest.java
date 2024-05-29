@@ -11,7 +11,8 @@ public class P01_PlaywrightTest {
 
         Playwright playwright=Playwright.create();
         BrowserType chromium = playwright.chromium();
-        Browser browser = chromium.launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Browser browser = chromium.launch(//if you want to see browser pass this line
+                new BrowserType.LaunchOptions().setHeadless(false));
         //default mode headless dır. burada headless modu false yaparak headed modu açmış olduk
         Page page = browser.newPage(); //page objesi en önemli objemiz
         page.navigate("https://www.google.com/");

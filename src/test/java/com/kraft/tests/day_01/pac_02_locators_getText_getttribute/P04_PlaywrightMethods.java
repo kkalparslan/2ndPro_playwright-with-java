@@ -14,7 +14,8 @@ public class P04_PlaywrightMethods {
 
         Playwright playwright = Playwright.create();
         BrowserType chromium = playwright.chromium();
-        Browser browser = chromium.launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Browser browser = chromium.launch(
+                new BrowserType.LaunchOptions().setHeadless(false));
         Page page = browser.newPage();
         page.navigate("https://library2.cybertekschool.com/login.html");
         // Is there any differences between the frameLocators and Locators in the Documentaion page?
