@@ -10,7 +10,8 @@ public class P02_BasicNavigations {
     public static void main(String[] args) {
         Playwright playwright=Playwright.create();
         BrowserType chromium = playwright.chromium();
-        Browser browser = chromium.launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Browser browser = chromium.launch(
+                new BrowserType.LaunchOptions().setHeadless(false));
         Page page = browser.newPage();
         page.navigate("https://practice.cydeo.com/");
         page.waitForTimeout(3000);
