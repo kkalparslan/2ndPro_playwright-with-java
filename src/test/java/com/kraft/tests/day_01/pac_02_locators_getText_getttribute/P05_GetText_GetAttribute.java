@@ -38,3 +38,4 @@ public class P05_GetText_GetAttribute {
         playwright.close();
     }
 }
+ 
