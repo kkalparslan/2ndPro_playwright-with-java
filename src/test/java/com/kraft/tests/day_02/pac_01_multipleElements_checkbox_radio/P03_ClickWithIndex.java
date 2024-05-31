@@ -22,8 +22,6 @@ public class P03_ClickWithIndex {
 
         List<ElementHandle>elementHandles=page.querySelectorAll(".container li a");
 
-
-
         BrowserUtils.sleepWithPage(page, 3);
 
         page.close();

@@ -11,7 +11,6 @@ public class P04_PlaywrightMethods {
 
     @Test
     void test() {
-
         Playwright playwright = Playwright.create();
         BrowserType chromium = playwright.chromium();
         Browser browser = chromium.launch(

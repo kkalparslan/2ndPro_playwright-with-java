@@ -17,7 +17,6 @@ public class P01_Dropdowns {
 
         //github dan alınacak eksiklikler
 
-
         BrowserUtils.sleepWithPage(page, 3);
 
         page.close();

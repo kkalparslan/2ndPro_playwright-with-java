@@ -7,7 +7,6 @@ public class P03_GoogleSearch {
 
     @Test
     void test(){
-
         Playwright playwright=Playwright.create();
         BrowserType chromium = playwright.chromium();
         Browser browser = chromium.launch(

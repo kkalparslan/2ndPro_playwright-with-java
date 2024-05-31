@@ -10,15 +10,11 @@ public class P02_Differences_InnerText_TextContent {
 
     @Test
     void test() {
-
         Playwright playwright = Playwright.create();
         BrowserType chromium = playwright.chromium();
         Browser browser = chromium.launch(new BrowserType.LaunchOptions().setHeadless(false));
         Page page = browser.newPage();
         page.navigate("");
-
-
-
 
         page.waitForTimeout(3000);
         page.close();
