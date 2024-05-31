@@ -10,7 +10,6 @@ public class P02_ClickLinkWithText {
 
     @Test
     void test(){
-
         Playwright playwright=Playwright.create();
         BrowserType chromium = playwright.chromium();
         Browser browser = chromium.launch(

@@ -10,7 +10,6 @@ public class P01_Locators {
 
     @Test
     void test() {
-
         Playwright playwright = Playwright.create();
         BrowserType chromium = playwright.chromium();
         Browser browser = chromium.launch(new BrowserType.LaunchOptions().setHeadless(false));

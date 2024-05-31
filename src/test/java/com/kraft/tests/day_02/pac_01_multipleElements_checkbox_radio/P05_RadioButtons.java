@@ -30,10 +30,6 @@ public class P05_RadioButtons {
         page.getByRole(AriaRole.RADIO, new Page.GetByRoleOptions().setName("Hockey")).click();
         //page.getByText("Water Polo").click();
 
-
-
-
-
         BrowserUtils.sleepWithPage(page, 2);
 
         page.close();

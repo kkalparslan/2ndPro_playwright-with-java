@@ -27,10 +27,8 @@ public class P04_checkbox_radio {
         checkBox1.check();
         checkBox2.uncheck();
 
-
         System.out.println("after clicking box1: "+checkBox1.isChecked());
         System.out.println("after clicking box2: "+checkBox2.isChecked());
-
 
         BrowserUtils.sleepWithPage(page, 2);
 
